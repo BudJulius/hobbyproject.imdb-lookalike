@@ -21,27 +21,26 @@ There is a lot of documentation (check resources) and try to limit your usage of
 Remember, the most important thing is functionality over looks! It may look like shit, doesn't matter, as long as it somewhat works. Again, it doesn’t have to be perfect, the code can look like like shit as well. I'm looking for functionality there - I want to see that it works and how it works, not why it works.
 
 So the plan is simple (but the implementation might be a pain in the ass :D).
-    1. Retrieve a movieDB API key.
-    2. Test it using the documentation and Bruno or Postman to make a call and retrieve a movie. For example if you use the /search endpoint, can you retrieve the information for "Finding Nemo"?
-    3. Create a single endpoint that you could test locally - to retrieve a movie (like in step 2. for example), and display that in the console or in debug mode (just to confirm that your implementation is working.
-    4. Make a database integration. Create tables, relationships etc.
-    5. Expand on the endpoints.
-    6. Create a simple frontend page that would be able to call the endpoints. See if you can connect them together.
-        a. If you want an extra challenge, we can discuss implementing authentication here as well.
-    7. Develop whatever you want further.
+1. Retrieve a movieDB API key.
+2. Test it using the documentation and Bruno or Postman to make a call and retrieve a movie. For example if you use the /search endpoint, can you retrieve the information for "Finding Nemo"?
+3. Create a single endpoint that you could test locally - to retrieve a movie (like in step 2. for example), and display that in the console or in debug mode (just to confirm that your implementation is working.
+4. Make a database integration. Create tables, relationships etc.
+5. Expand on the endpoints.
+6. Create a simple frontend page that would be able to call the endpoints. See if you can connect them together. If you want an extra challenge, we can discuss implementing authentication here as well.
+7. Develop whatever you want further.
     
 
 You can send me a message whenever you want.
 ## Resources:
-[Getting Started](https://developer.themoviedb.org/docs/getting-started) - The movie DB
-[Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/)
-[Docker Docs](https://docs.docker.com/)
+- [Getting Started](https://developer.themoviedb.org/docs/getting-started) - The movie DB
+- [Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/)
+- [Docker Docs](https://docs.docker.com/)
 
-### Endpoints (suggestions):
-GET first 10 elements:
-GET: /api/movie/{name}
-GET: /api/movie/{year}
-GET: /api/movie/{genre} (start with just a few genres first, expand later)
-GET: /api/movie/search/{name}
-GET: /api/movie/top (not sure if the movieDB API has and endpoint for that. Can you come up with a solution yourself? ;) )
+## Endpoints (suggestions):
+### GET first 10 elements:
+- GET: /api/movie/{name}
+- GET: /api/movie/{year}
+- GET: /api/movie/{genre} (start with just a few genres first, expand later)
+- GET: /api/movie/search/{name}
+- GET: /api/movie/top (not sure if the movieDB API has and endpoint for that. Can you come up with a solution yourself? ;) )
 (any other you come up with)
