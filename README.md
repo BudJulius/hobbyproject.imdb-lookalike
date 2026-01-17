@@ -13,6 +13,12 @@ So here in this project, the API (the backend) is the most important. Since both
 
 Anyways, what I want the backend to do is to connect to the "The movie DB" API (create an user, request an API key, use it for making API calls - or ask me and I will provide my API key, doesn't matter). Then you should connect to a database of your choosing (host it locally, maybe in Docker container or something. Use SQL database, as it will teach you a lot about LINQ, EF Core, creating and managing tables, creating tables with primary and foreign keys, relationships and querying in general. Once you have that down, you can create a some endpoints that you frontend would call to retrieve information - but what I would love to is if I for example make a GET movie call, the backend checks the database first, if the movie exists, then return it, if not - call the movieDB API, retrieve the movie and save it in DB for next time, thus limiting the need to call the movieDB multiple times for the same request.
 
+For python app it can be pretty straightforward. Just make calls to the movieDB using httpClient, reformat the returned JSON and feed it to the database, then return whatever is requested to the frontend. It's still a job, just a little less tedious one :D
+
+For the .NET application, i want to N-tier architecture (no need for business layer, just do API and Data access layers). I want to see DBContext implementation and use of LINQ language to query the SQL database (instead of raw-dogging SQL queries). You will have to create Models/DTOs. You can either use Function apps (read Microsoft documentation) or a controller based API app. It's up to you. I think from school days you might be most comfortable with controllers.
+
+You may colaborate if you want. Just make sure to be aware of what each you are doing if you work at the same time. Also Juozas, like I said, you can try your hand at .NET if you want. I will help you both as much as I can.
+
 Ask many questions, I'm here to help, but not to hold your hand. Also for each new implementation, create an issue first in Github, then from that issue create a new branch, and work on that branch. After you are done, create a Pull request so I can review it and merge to main (I won't limit what you can do, but it helps learning). We can also meet some days and work on this together. No pressure though, just focus on learning. And don't overcomplicate things, just get it to work :D that’s the most important thing. 
 
 I will try to host a database in cloud, so you can connect to it, but I can't promise anything. Will let you know. 
@@ -44,3 +50,5 @@ You can send me a message whenever you want.
 - GET: /api/movie/search/{name}
 - GET: /api/movie/top (not sure if the movieDB API has and endpoint for that. Can you come up with a solution yourself? ;) )
 (any other you come up with)
+
+# Good luck!
