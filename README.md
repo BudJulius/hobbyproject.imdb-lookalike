@@ -17,7 +17,7 @@ For python app it can be pretty straightforward. Just make calls to the movieDB 
 
 For the .NET application, i want to N-tier architecture (no need for business layer, just do API and Data access layers). I want to see DBContext implementation and use of LINQ language to query the SQL database (instead of raw-dogging SQL queries). You will have to create Models/DTOs. You can either use Function apps (read Microsoft documentation) or a controller based API app. It's up to you. I think from school days you might be most comfortable with controllers.
 
-You may colaborate if you want. Just make sure to be aware of what each you are doing if you work at the same time. Also Juozas, like I said, you can try your hand at .NET if you want. I will help you both as much as I can.
+You may colaborate if you want. Just make sure to be aware of what each you are doing if you work at the same time. Also Juozas, like I said, you can try your hand at .NET if you want. I will help you both as much as I can. If you work seperately, be sure to create and work in your own specific folders.
 
 Ask many questions, I'm here to help, but not to hold your hand. Also for each new implementation, create an issue first in Github, then from that issue create a new branch, and work on that branch. After you are done, create a Pull request so I can review it and merge to main (I won't limit what you can do, but it helps learning). We can also meet some days and work on this together. No pressure though, just focus on learning. And don't overcomplicate things, just get it to work :D that’s the most important thing. 
 
